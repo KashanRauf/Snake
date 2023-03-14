@@ -14,8 +14,9 @@ public class Coordinate {
         this.y = 0;
     }
     public Coordinate(int x, int y) {
-        this.x = x;
-        this.y = y;
+        // Scales by UNIT_SIZE to match grid
+        this.x = x * GamePanel.UNIT_SIZE;
+        this.y = y * GamePanel.UNIT_SIZE;
     }
 
     @Override
